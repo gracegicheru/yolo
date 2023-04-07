@@ -21,3 +21,4 @@ Have included all the commits while adding the dockerfiles and docker-compose
 
 The backend application runs successful and connects to the database. However the client exits with 0 error while running the development server, we can leverage it with Nginx.
 
+## Docker image Tag
