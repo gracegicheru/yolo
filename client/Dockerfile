@@ -1,4 +1,4 @@
-FROM node:13.12-alpine
+FROM node:13.12-alpine AS builder
 
 RUN mkdir client
 
