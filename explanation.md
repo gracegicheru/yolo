@@ -22,7 +22,7 @@ Have included all the commits while adding the dockerfiles and docker-compose
 The backend application runs successful and connects to the database. However the client exits with 0 error while running the development server, we can leverage it with Nginx.
 
 ## Docker image Tag
-The images will have the latest tag 
+The images will have the latest or Versions i.e V1
 
 ## Docker images on the dockerhub
 gracie123/yolo_app
