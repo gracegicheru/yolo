@@ -19,10 +19,10 @@ Have included all the commits while adding the dockerfiles and docker-compose
 
 ## Successful Running Application
 
-The backend application runs successful and connects to the database. However the client exits with 0 error while running the development server, we can leverage it with Nginx.
+The backend application runs successful and connects to the database. However the client exits with 0 error while running the development server, we can leverage it with stdin_open: true on the docker-compose to keep the terminal open.
 
 ## Docker image Tag
-The images will have the latest or Versions i.e V1
+The images will have Versions i.e V1.0.0
 
 ## Docker images on the dockerhub
 gracie123/yolo_app
