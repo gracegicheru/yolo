@@ -19,7 +19,7 @@
           - name: yolo-client
             image: gracie123/yolo_app:v1.0.0
             ports:
-            - containerPort: 8080
+            - containerPort: 3000
             imagePullPolicy: Always
             resources:
               requests:
@@ -31,7 +31,7 @@
             livenessProbe:
               httpGet:
                 path: /actuator/health
-                port: 8080
+                port: 3000
               initialDelaySeconds: 180 # start checking after 180s after pod starts, should be longer than service start time. Some service takes minutes to start, so we set a big value here.
               periodSeconds: 10 # check health check api every 10 seconds
               timeoutSeconds: 3 # if response time is longer than 3 seconds, we consider the check as failed
@@ -40,7 +40,7 @@
             readinessProbe:
               httpGet:
                 path: /actuator/health
-                port: 8080
+                port: 3000
               initialDelaySeconds: 30 # start checking after 30s after pod starts. should set to a minimal value such that service able to receive requests as soon as it is ready
               periodSeconds: 10 # check health check api every 10 seconds
               timeoutSeconds: 3 # if response time is longer than 3 seconds, we consider the check as failed
